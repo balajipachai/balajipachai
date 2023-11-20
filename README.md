@@ -73,8 +73,9 @@ But I bet you what, I know how to find the answer and I will find the answer.”
     - Initiated the conception and implementation of a cutting-edge dividend-paying token for PlaytimeProfit, demonstrating proficiency in smart contract development and innovative tokenomics.
     - [GitHub Repository](https://github.com/playtimeprofit/definetics)
 
- **Smart Contract Refactoring and Audit Response Portfolio:**
-
+---
+### Smart Contract Refactoring and Audit Response Portfolio
+---
    Embarked on a comprehensive journey of refactoring and enhancing the Garfield token contract, diligently addressing all audit recommendations. The meticulous effort involved not only refactoring the existing codebase but also fortifying it with additional tests, aiming for near 100% code coverage. Below is a detailed breakdown of the tasks accomplished:
 
    1. **Refactoring for Enhanced Security:**
