@@ -17,11 +17,11 @@ But I bet you what, I know how to find the answer and I will find the answer.”
 
 <p align="left"> <a href="https://twitter.com/balaji_pachai" target="blank"><img src="https://img.shields.io/twitter/follow/balaji_pachai?logo=twitter&style=for-the-badge" alt="balaji_pachai" /></a> </p>
 
-- 🔭 I’m currently working on [Curiosity - Continuous Learning](https://github.com/balajipachai/curiosity)
+- 🔭 I’m currently working on [Curiosity - Continuous Learning](https://github.com/balajipachai/curiosity), OpenSource Contribution
 
-- 🌱 I’m currently learning **C++ STL, DSA, Flutter**
+- 🌱 I’m currently learning **C++ STL, DSA, CCIP (Chainlink Cross Chain Interoperability Protocol)**
 
-- 👯 I’m looking to collaborate on **Backend Development, Blockchain Project, Smart Contract Development**
+- 👯 I’m looking to collaborate on **Backend Development, Blockchain Project, Smart Contract Development, OpenSource Projects**
 
 - 📝 I regularly write articles on [Blockchain Development, Solidity, My New Learnings](Blockchain Development, Solidity, My New Learnings)
 
@@ -30,6 +30,8 @@ But I bet you what, I know how to find the answer and I will find the answer.”
 - 📫 How to reach me **iamthebatman.superjet886@passfwd.com**
 
 - 📄 Know about my experiences [https://www.linkedin.com/in/balaji-shetty-pachai/](https://www.linkedin.com/in/balaji-shetty-pachai/)
+   - CompetentBALA NFT - Contains NFTs in regards to my professional achievements. [Contract Code](https://polygonscan.com/address/0xff48db6307e6590da0add253b3256100ec606618#code)
+   - [CompetentBALA Opensea Collection](https://opensea.io/collection/competentbala)
 
 - ⚡ Fun fact **All of ERC20's & ERC721's trivial learning is around the functions transfer & transferFrom.**
 
@@ -72,6 +74,43 @@ But I bet you what, I know how to find the answer and I will find the answer.”
 5. **Dividend-Paying Token for PlaytimeProfit**
     - Initiated the conception and implementation of a cutting-edge dividend-paying token for PlaytimeProfit, demonstrating proficiency in smart contract development and innovative tokenomics.
     - [GitHub Repository](https://github.com/playtimeprofit/definetics)
+
+6. **OpenTherapoid Smart Contacts**
+   - **Contracts Developed:**
+      - OpenTherapoid Token Contract (Ethereum Mainnet) [Contract Code](https://etherscan.io/address/0x8282c4f8debbb1d0749e870697df688f65937cbb#code)
+      - ChildOpenTherapoid (Polygon Mainnet) [Contract Code](https://polygonscan.com/address/0x3b87592054b6c8a7af5f208e8b1e266b4639f40e#code)
+      - IssueSCI (Polygon Mainnet) [Contract Code](https://polygonscan.com/address/0x8282c4f8debbb1d0749e870697df688f65937cbb#code)
+   - **Blockchain Interoperability:**
+      - Successfully bridged tokens from Ethereum to Polygon.
+   - **Token Contract Security Features:**
+      - Implemented anti-whale measures with a max account transfer limit.
+      - Configurable time between transaction submissions, controlled by the contract owner.
+   - **SCI Token Issuance:**
+      - Utilized the IssueSCI contract for efficient and controlled issuance of SCI tokens.
+      - Conducted batch processing to minimize transaction fees.
+   - **Risk Mitigation:**
+      - Gnosis MultiSigWallet serves as the owner of all contracts.
+      - Ensured enhanced security by minimizing the risk of owner private key compromise.
+
+7.  **EarnTV Smart Contacts**
+   - **Contracts Developed:**
+      - EarnTV Token Contract (Polygon Mainnet) [Contract Code](https://polygonscan.com/address/0xc77aea972f862df1f6a520be673df63a01255ff9#code)
+      - IssueETV (Polygon Mainnet) [Contract Code](https://polygonscan.com/address/0xb594cdc7814ab564420491e5bad04f99df534b37#code)
+      - BronzeNFT [Contract Code](https://polygonscan.com/address/0xaa13baa7eefd6013757abe3709dd757e2949e992#code)
+      - SilverNFT [Contract Code](https://polygonscan.com/address/0xa9ce37d18cbce70c792087ea863a53859605eba7#code)
+   - **Token Contract Security Features:**
+      - Implemented anti-whale measures with a max account transfer limit.
+      - Configurable time between transaction submissions, controlled by the contract owner.
+   - **ETV Token Issuance:**
+      - Utilized the IssueETV contract for efficient and controlled issuance of ETV tokens.
+      - Conducted batch processing to minimize transaction fees.
+   - **Risk Mitigation:**
+      - Gnosis MultiSigWallet serves as the owner of all contracts.
+      - Ensured enhanced security by minimizing the risk of owner private key compromise.
+   - **Innovative NFT Subscriptions:**
+      - Introduced subscription NFTs for both SilverNFT and BronzeNFT based on the draft subscription EIP5643.
+
+*The portfolio entries 6 & 7 showcases my proficiency in developing secure and interoperable smart contracts, with a focus on optimizing transaction costs and minimizing security risks.*
 
 ---
 ### Smart Contract Refactoring and Audit Response Portfolio
