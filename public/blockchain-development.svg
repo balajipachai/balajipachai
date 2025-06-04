@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="250" fill="url(#gradient-bg)" opacity="0.1"/>
+  
+  <!-- Blockchain Blocks -->
+  <g transform="translate(200, 150)">
+    <!-- Block 1 -->
+    <rect x="0" y="0" width="120" height="120" rx="12" fill="#00BCD4" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.7;0.9" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="60" y="60" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Block 1</text>
+    
+    <!-- Block 2 -->
+    <rect x="140" y="0" width="120" height="120" rx="12" fill="#FF4081" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.7;0.9" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+    </rect>
+    <text x="200" y="60" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Block 2</text>
+    
+    <!-- Block 3 -->
+    <rect x="280" y="0" width="120" height="120" rx="12" fill="#00BCD4" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.7;0.9" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+    <text x="340" y="60" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Block 3</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g stroke="#00BCD4" stroke-width="3" stroke-dasharray="5,5">
+    <line x1="320" y1="210" x2="340" y2="210">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="460" y1="210" x2="480" y2="210">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+    </line>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g fill="#FF4081" opacity="0.6">
+    <circle cx="150" cy="400" r="20">
+      <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="200" r="15">
+      <animate attributeName="r" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="700" cy="450" r="25">
+      <animate attributeName="r" values="25;30;25" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <radialGradient id="gradient-bg" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#00BCD4"/>
+      <stop offset="100%" stop-color="#FF4081"/>
+    </radialGradient>
+  </defs>
+</svg> 
