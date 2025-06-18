@@ -31,6 +31,7 @@ I'm a passionate Blockchain Developer and Smart Contract Engineer with extensive
   - Built smart contracts for On Chain Gaming Registry [game-registry](https://github.com/shibaone/game-regsitry/tree/feat/batman/reward/smart/contracts)
   - Rebranded OpenSea contracts to Shib Marketplace
   - Developed cross-chain swap contracts using CCIP and Li.Fi [crosschain-shibaswap](https://github.com/shibaone/crosschain-shibaswap)
+  - Developed, implemented & deployed Shib Newsletter Cover V2 NFT contracts [Proxy](https://www.shibariumscan.io/address/0xa68e8083507688bCA90129102885F0775B5df706#code) - [Implementation](https://www.shibariumscan.io/address/0xa55D73e4Be7d4C58C13d71A1F33aa9025E97e81e#code)
 
 - **Blockchain Developer** at V2Soft
 
