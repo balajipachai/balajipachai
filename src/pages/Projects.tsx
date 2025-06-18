@@ -21,7 +21,6 @@ import {
 import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import CodeIcon from "@mui/icons-material/Code";
 import StorageIcon from "@mui/icons-material/Storage";
 import SecurityIcon from "@mui/icons-material/Security";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -30,6 +29,28 @@ import CoffeeIcon from "@mui/icons-material/LocalCafe";
 const MotionBox = motion(Box);
 
 const projects = [
+  {
+    title: "Shib Newsletter Cover V2",
+    description:
+      "Smart Contracts for managing newsletter cover NFTs with batch minting capabilities. Developed, implemented & deployed the contracts.",
+    technologies: ["Solidity", "Hardhat", "Shibarium", "Ethers.js"],
+    links: {
+      github: "https://github.com/shibaone/shib-newsletter-contracts",
+      live: "https://www.shibariumscan.io/address/0xa68e8083507688bCA90129102885F0775B5df706?tab=contract",
+    },
+    icon: <SecurityIcon />,
+  },
+  {
+    title: "Staking Contract",
+    description:
+      "Implemented a comprehensive staking system with rigorous testing and security measures.",
+    technologies: ["Solidity", "BSC", "Truffle"],
+    links: {
+      github: "https://github.com/balajipachai/bitdiamond-sc",
+      live: "https://bscscan.com/address/0x34de06b7036db790e706f28a7ef9fcedb98971cc",
+    },
+    icon: <SecurityIcon />,
+  },
   {
     title: "Treasury Smart Contract",
     description:
@@ -40,7 +61,7 @@ const projects = [
         "https://github.com/b-cube-ai/b-cube-ico/tree/feat/new-sale-contracts",
       live: "https://etherscan.io/address/0x9741fcb37249584f52c7dc613e5f2bc6280d463e",
     },
-    icon: <StorageIcon />,
+    icon: <SecurityIcon />,
   },
   {
     title: "Solhub Token Ecosystem",
@@ -50,7 +71,7 @@ const projects = [
     links: {
       github: "https://github.com/solhub-finance/ico-contracts",
     },
-    icon: <CodeIcon />,
+    icon: <SecurityIcon />,
   },
   {
     title: "FAVE ERC-20 Token",
@@ -60,17 +81,6 @@ const projects = [
     links: {
       github: "https://github.com/balajipachai/favecoin-sc",
       live: "https://testnet.bscscan.com/token/0x51aC4626A5223305a22336483bFfE7862f5f0858",
-    },
-    icon: <CodeIcon />,
-  },
-  {
-    title: "Staking Contract",
-    description:
-      "Implemented a comprehensive staking system with rigorous testing and security measures.",
-    technologies: ["Solidity", "BSC", "Truffle"],
-    links: {
-      github: "https://github.com/balajipachai/bitdiamond-sc",
-      live: "https://bscscan.com/address/0x34de06b7036db790e706f28a7ef9fcedb98971cc",
     },
     icon: <SecurityIcon />,
   },
