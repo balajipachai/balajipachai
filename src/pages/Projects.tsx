@@ -41,6 +41,34 @@ const projects = [
     icon: <SecurityIcon />,
   },
   {
+    title: "Decentralized Aggregator (Dex Aggregator)",
+    description:
+      "A powerful DEX aggregator service that provides seamless token swaps, cross-chain bridges, and token information across multiple networks. It aggregates liquidity from various DEXs (Decentralized Exchanges)",
+    technologies: [
+      "Node.js",
+      "Typescript",
+      "Ethers.js",
+      "MongoDB",
+      "Alchemy",
+      "GraphQL",
+      "REST",
+    ],
+    links: {
+      github: "https://github.com/shibaone/shibadex-aggregator",
+    },
+    icon: <SecurityIcon />,
+  },
+  {
+    title: "NFT Indexing Squid",
+    description:
+      "A comprehensive NFT indexing solution for the Shibarium network (Puppynet & Shibarium) built with Subsquid. This squid indexes NFT collections, tokens, transfers, metadata, and user activities to provide a complete NFT marketplace data layer.",
+    technologies: ["GraphQL", "Typescript"],
+    links: {
+      github: "https://github.com/shibaone/nft-indexer-squid",
+    },
+    icon: <SecurityIcon />,
+  },
+  {
     title: "Staking Contract",
     description:
       "Implemented a comprehensive staking system with rigorous testing and security measures.",
