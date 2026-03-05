@@ -9,10 +9,7 @@ import {
   Chip,
   Divider,
   Avatar,
-  useTheme,
-  useMediaQuery,
   Button,
-  Link,
   Card,
   CardContent,
 } from "@mui/material";
@@ -26,78 +23,44 @@ const MotionBox = motion(Box);
 
 const skills = [
   { name: "Solidity", icon: <CodeIcon /> },
+  { name: "ERC-20/721/1155", icon: <CodeIcon /> },
   { name: "TypeScript", icon: <CodeIcon /> },
   { name: "Node.js", icon: <CodeIcon /> },
+  { name: "Express.js", icon: <CodeIcon /> },
   { name: "GraphQL", icon: <CodeIcon /> },
-  { name: "DApps", icon: <CodeIcon /> },
+  { name: "Go", icon: <CodeIcon /> },
+  { name: "React.js", icon: <CodeIcon /> },
   { name: "Hardhat", icon: <CodeIcon /> },
   { name: "Foundry", icon: <CodeIcon /> },
+  { name: "Truffle", icon: <CodeIcon /> },
   { name: "Web3.js", icon: <CodeIcon /> },
   { name: "Ethers.js", icon: <CodeIcon /> },
-  { name: "MySQL", icon: <StorageIcon /> },
+  { name: "Subsquid", icon: <StorageIcon /> },
+  { name: "The Graph", icon: <StorageIcon /> },
+  { name: "PostgreSQL", icon: <StorageIcon /> },
   { name: "MongoDB", icon: <StorageIcon /> },
+  { name: "MySQL", icon: <StorageIcon /> },
+  { name: "Docker", icon: <StorageIcon /> },
+  { name: "AWS", icon: <StorageIcon /> },
+  { name: "IPFS", icon: <StorageIcon /> },
   { name: "Git", icon: <StorageIcon /> },
-  { name: "Smart Contracts", icon: <StorageIcon /> },
-  { name: "Blockchain", icon: <StorageIcon /> },
+  { name: "Shell Scripting", icon: <StorageIcon /> },
   { name: "EVM Chains", icon: <SecurityIcon /> },
   { name: "OpenZeppelin", icon: <SecurityIcon /> },
   { name: "Chainlink CCIP", icon: <SecurityIcon /> },
-];
-
-const toolIcons = [
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-    alt: "React",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-    alt: "JavaScript",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-    alt: "TypeScript",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/solidity/solidity-original.svg",
-    alt: "Solidity",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-    alt: "Node.js",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-    alt: "PostgreSQL",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-    alt: "Docker",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
-    alt: "Git",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ethereum/ethereum-original.svg",
-    alt: "Ethereum",
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-    alt: "MongoDB",
-  },
+  { name: "Infura", icon: <SecurityIcon /> },
+  { name: "Alchemy", icon: <SecurityIcon /> },
 ];
 
 const About = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <>
       <Helmet>
-        <title>About Balaji Pachai - Blockchain Developer</title>
+        <title>About Balaji Pachai - Senior Blockchain / Solidity Engineer</title>
         <meta
           name="description"
-          content="Learn more about Balaji Pachai, a blockchain developer and smart contract expert with extensive experience in Ethereum, Solidity, and decentralized applications."
+          content="Senior Blockchain Engineer with 10+ years in software and 7+ years specialising in EVM and multi-chain systems. Smart contracts, indexing, and backend APIs."
         />
       </Helmet>
 
@@ -155,13 +118,14 @@ const About = () => {
                   gutterBottom
                   sx={{ mb: 2 }}
                 >
-                  Blockchain Engineer
+                  Senior Blockchain / Solidity Engineer
                 </Typography>
                 <Typography color="text.secondary" paragraph>
-                  Passionate about building secure and efficient decentralized
-                  applications that push the boundaries of blockchain
-                  technology. Skilled in Shell scripting and automation.
-                  Enthusiastic about development, teaching, and public speaking.
+                  10+ years in software, 7+ years specialising in EVM and
+                  multi-chain systems. I own the full Web3 lifecycle — smart
+                  contracts, deterministic indexing, and high-performance backend
+                  APIs. Passionate about development, teaching, and public
+                  speaking.
                 </Typography>
               </Paper>
             </Grid>
@@ -193,23 +157,22 @@ const About = () => {
                   About Me
                 </Typography>
                 <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
-                  I'm a passionate blockchain, backend developer and smart
-                  contract expert with a strong focus on building secure and
-                  gas-efficient decentralized applications. My journey in
-                  blockchain development has led me to work on various projects,
-                  from token contracts to complex DeFi protocols.
+                  I'm a Senior Blockchain Engineer with a strong focus on
+                  building secure and gas-efficient decentralized applications.
+                  My journey in blockchain development has led me to work on 10+
+                  projects spanning DeFi, NFTs, DeSci, and enterprise domains —
+                  from token contracts to complex L2 infrastructure.
                 </Typography>
                 <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
-                  With a deep understanding of Ethereum (EVMs), Solidity, and
-                  blockchain architecture, I strive to create innovative
-                  solutions that push the boundaries of what's possible in the
-                  decentralized world. My expertise extends to smart contract
-                  development, backend development, code reviews and building
-                  user-friendly DApps.
+                  With a deep understanding of EVM chains, Solidity, and
+                  blockchain architecture, I own the full Web3 lifecycle — smart
+                  contracts, deterministic indexing (Subsquid/The Graph), and
+                  high-performance backend APIs. Currently building
+                  production-grade L2 infrastructure at Shiba Inu (Shibarium).
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                   I'm constantly learning and adapting to new technologies in
-                  the technological space, ensuring that I can provide the best
+                  the blockchain space, ensuring that I can provide the best
                   solutions for any project I work on.
                 </Typography>
 
@@ -307,7 +270,7 @@ const About = () => {
                             component="h2"
                             sx={{ ml: 1, fontWeight: 600 }}
                           >
-                            Senior Blockchain Developer
+                            Senior Smart Contract, Web3 Backend & Indexing Engineer
                           </Typography>
                         </Box>
                         <Typography
@@ -315,7 +278,7 @@ const About = () => {
                           color="primary"
                           sx={{ mb: 2, fontWeight: 500 }}
                         >
-                          Shiba Inu
+                          Shiba Inu | Apr 2024 – Present
                         </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
@@ -323,48 +286,45 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Led smart contract and API development for Shifu
-                            Airdrop, managing deployment coordination and
-                            pre-launch preparations
+                            • Own end-to-end data pipelines: smart contracts →
+                            Subsquid indexers → Node.js/GraphQL APIs powering
+                            Shibarium ecosystem tools
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Contributed to cross-chain token standard
-                            development and ensured seamless integration using
-                            Chainlink CCIP
+                            • Architected Subsquid indexers syncing millions of
+                            L2 blocks with deterministic event modelling
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Built the Central Authentication Service SDK
-                            within a week and integrated it into the SHIB
-                            umbrella SDK
+                            • Led smart contract development for ShifuAirdrop
+                            and cross-chain token standards using Chainlink CCIP
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed smart contracts for On Chain Gaming
-                            Registry, including tournaments, sponsors, and
-                            rewards system
+                            • Built Central Authentication Service SDK and On
+                            Chain Gaming Registry smart contracts
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Rebranded OpenSea contracts to Shib Marketplace
-                            and migrated from The Graph to Subsquid
-                          </Typography>
-                          <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                             • Developed cross-chain swap contracts using CCIP
                             and Li.Fi for Crosschain Shibaswap
+                          </Typography>
+                          <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                            • Developed, implemented & deployed Shib Newsletter
+                            Cover V2 NFT contracts
                           </Typography>
                         </Box>
                       </CardContent>
@@ -402,7 +362,7 @@ const About = () => {
                             component="h2"
                             sx={{ ml: 1, fontWeight: 600 }}
                           >
-                            Blockchain Developer
+                            Senior Software Engineer (Blockchain)
                           </Typography>
                         </Box>
                         <Typography
@@ -410,7 +370,7 @@ const About = () => {
                           color="primary"
                           sx={{ mb: 2, fontWeight: 500 }}
                         >
-                          V2Soft
+                          V2Soft | May 2021 – Feb 2024
                         </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
@@ -418,29 +378,32 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Translated client requirements into Solidity smart
-                            contracts and architected comprehensive blockchain
-                            solutions
+                            • Translated client requirements into production
+                            Solidity smart contracts; architected comprehensive
+                            blockchain solutions
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed APIs, deployed contracts, and set up
-                            backend servers for various blockchain projects
+                            • Designed, developed, and deployed the V2Soft 25th
+                            Anniversary NFT system end-to-end — Solidity
+                            contracts, Node.js APIs, MySQL, AWS
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Created Proof of Concepts (PoCs) and contributed
-                            to Blockchain Innovation Teams
+                            • Built the Vehicle NFT platform storing vehicle
+                            lifecycle data on-chain via ERC-721 with IPFS
+                            metadata
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                            • Conducted training sessions for newcomers and
-                            explained blockchain concepts to team members
+                            • Developed PoCs and actively contributed to the
+                            Blockchain Innovation Team; trained newcomers on
+                            Solidity and blockchain
                           </Typography>
                         </Box>
                       </CardContent>
@@ -478,7 +441,7 @@ const About = () => {
                             component="h2"
                             sx={{ ml: 1, fontWeight: 600 }}
                           >
-                            Lead Backend and Blockchain Developer
+                            Senior Blockchain & Backend Engineer
                           </Typography>
                         </Box>
                         <Typography
@@ -486,7 +449,7 @@ const About = () => {
                           color="primary"
                           sx={{ mb: 2, fontWeight: 500 }}
                         >
-                          Humation Limited
+                          Self Employed / Freelance | Dec 2019 – Apr 2021
                         </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
@@ -494,29 +457,32 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Led Smart Contract Development using Solidity
-                            across multiple blockchains (Ethereum, TRON, Waves,
-                            Stellar)
+                            • Designed & deployed production smart contracts for
+                            staking, rewards, vesting, ERC20/721, and full token
+                            ecosystems
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Designed and architected feature implementations
-                            with focus on blockchain interoperability
+                            • Built the EarnTV Reward Engine — ERC-20 issuance,
+                            staking, NFTs, and Gnosis MultiSig wallet
+                            integration
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Managed smart contract deployment, API
-                            development, and blockchain node setup
+                            • Developed smart contracts for OpenTherapeutics
+                            (Decentralised Science) — researcher rewards,
+                            funding, and collaboration
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                            • Played a key role in implementing cross-chain
-                            interoperability solutions
+                            • Led backend & blockchain development at Humation
+                            Limited — cross-chain interoperability across
+                            Ethereum, TRON, Waves, and Stellar
                           </Typography>
                         </Box>
                       </CardContent>
@@ -554,7 +520,7 @@ const About = () => {
                             component="h2"
                             sx={{ ml: 1, fontWeight: 600 }}
                           >
-                            Blockchain Developer
+                            Senior Software Engineer
                           </Typography>
                         </Box>
                         <Typography
@@ -562,7 +528,7 @@ const About = () => {
                           color="primary"
                           sx={{ mb: 2, fontWeight: 500 }}
                         >
-                          Harbinger Systems
+                          Harbinger Systems | Jan 2017 – Dec 2019
                         </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
@@ -570,15 +536,8 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed smart contracts using Solidity and
-                            Truffle Framework
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            paragraph
-                            sx={{ lineHeight: 1.8 }}
-                          >
-                            • Created private blockchain networks with various
+                            • Specialised in Solidity and Truffle Framework;
+                            created private blockchain networks with diverse
                             consensus algorithms
                           </Typography>
                           <Typography
@@ -586,20 +545,31 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Deployed contracts across multiple networks
-                            (Ganache, Private Blockchain, Testnets, Mainnet)
+                            • Developed Certificate of Authenticity — ERC-721
+                            NFT platform for artwork provenance with IPFS and
+                            React.js
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed REST APIs for blockchain system
-                            integration
+                            • Forked ARK blockchain to create Blockpool —
+                            analysed architecture, proposed changes, and
+                            implemented the fork
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • Created Loan Lending App and Land Records DApps;
+                            achieved 100% smart contract test coverage via TDD
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                            • Implemented Test-Driven Development (TDD)
-                            practices and conducted thorough unit testing
+                            • Deployed contracts across Ganache, private
+                            networks, testnets, and mainnet; established
+                            blockchain nodes on AWS
                           </Typography>
                         </Box>
                       </CardContent>
@@ -636,29 +606,29 @@ const About = () => {
                             component="h2"
                             sx={{ ml: 1, fontWeight: 600 }}
                           >
-                            Professional Freelancer
+                            Associate Software Engineer
                           </Typography>
                         </Box>
+                        <Typography
+                          variant="subtitle1"
+                          color="primary"
+                          sx={{ mb: 2, fontWeight: 500 }}
+                        >
+                          AtoS India Pvt. Ltd | May 2014 – Jul 2015
+                        </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed smart contracts for various blockchains
-                            and architected DApp solutions
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            paragraph
-                            sx={{ lineHeight: 1.8 }}
-                          >
-                            • Provided blockchain consulting services for
-                            optimal technology integration
+                            • Monitored production servers, scheduled batch
+                            jobs, tested endpoints, and conducted root-cause
+                            analysis of incidents
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                            • Offered blockchain training and knowledge transfer
-                            to clients
+                            • Facilitated daily stand-ups and generated
+                            comprehensive reports for tracking and data analysis
                           </Typography>
                         </Box>
                       </CardContent>
@@ -778,6 +748,65 @@ const About = () => {
                           View Collection
                         </Button>
                       </Box>
+                    </Box>
+                  </Grid>
+                </Grid>
+              </Paper>
+            </Grid>
+
+            {/* Certifications & Education */}
+            <Grid item xs={12}>
+              <Paper
+                elevation={3}
+                sx={{
+                  p: 4,
+                  position: "relative",
+                  overflow: "visible",
+                  "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: "4px",
+                    background:
+                      "linear-gradient(90deg, #00bcd4 0%, #ff4081 100%)",
+                    borderTopLeftRadius: 12,
+                    borderTopRightRadius: 12,
+                  },
+                }}
+              >
+                <Grid container spacing={4}>
+                  <Grid item xs={12} md={6}>
+                    <Typography variant="h5" sx={{ fontWeight: 600, mb: 3 }}>
+                      Certifications
+                    </Typography>
+                    <Box sx={{ pl: 2 }}>
+                      <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
+                        • Consensys Blockchain Developer Bootcamp — Scholar Recipient
+                      </Typography>
+                      <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
+                        • IAAA Certified Ethereum Blockchain Developer and Professional
+                      </Typography>
+                      <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
+                        • Arc Certified Remote Developer — Arc
+                      </Typography>
+                      <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                        • Intensive Certificate in German Language — Savitribai Phule Pune University
+                      </Typography>
+                    </Box>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Typography variant="h5" sx={{ fontWeight: 600, mb: 3 }}>
+                      Education
+                    </Typography>
+                    <Box sx={{ pl: 2 }}>
+                      <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
+                        • M.Sc. in Scientific Computing — Savitribai Phule Pune University (CGPA: 8.6/10, Grade A+) | Jul 2015 – Apr 2017
+                      </Typography>
+                      <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                        • B.Sc. in Computer Science — Nowrosjee Wadia College (CGPA: 6.8/10, Grade A) | Jul 2011 – May 2014
+                      </Typography>
                     </Box>
                   </Grid>
                 </Grid>
