@@ -8,66 +8,27 @@ import {
   Card,
   CardContent,
   Button,
-  useTheme,
-  useMediaQuery,
   IconButton,
   Paper,
-  Link,
   CircularProgress,
-  Chip,
   Modal,
   Fade,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import CodeIcon from "@mui/icons-material/Code";
-import StorageIcon from "@mui/icons-material/Storage";
-import SecurityIcon from "@mui/icons-material/Security";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import EmailIcon from "@mui/icons-material/Email";
 import CoffeeIcon from "@mui/icons-material/LocalCafe";
 import MediumIcon from "@mui/icons-material/Article";
-import StarIcon from "@mui/icons-material/Star";
 import GroupIcon from "@mui/icons-material/Group";
-import FolderIcon from "@mui/icons-material/Folder";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
 import AchievementIcon from "@mui/icons-material/MilitaryTech";
-import BugReportIcon from "@mui/icons-material/BugReport";
-import VisibilityIcon from "@mui/icons-material/Visibility";
 import GistIcon from "@mui/icons-material/Description";
-import RepoIcon from "@mui/icons-material/Book";
 
 const MotionBox = motion(Box);
-
-// Custom Stack Overflow SVG Icon
-const StackOverflowSvg = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <rect x="3" y="17" width="15" height="3" fill="#BCBBBB" />
-    <rect x="5" y="15" width="11" height="1.5" fill="#BCBBBB" />
-    <rect x="5" y="13" width="11" height="1.5" fill="#BCBBBB" />
-    <rect x="5" y="11" width="11" height="1.5" fill="#BCBBBB" />
-    <path d="M8 10L16 6" stroke="#F48024" strokeWidth="1.5" />
-    <rect
-      x="3"
-      y="3"
-      width="15"
-      height="14"
-      rx="2"
-      stroke="#F48024"
-      strokeWidth="2"
-    />
-    <rect x="7" y="19" width="7" height="1" fill="#F48024" />
-  </svg>
-);
 
 const socialLinks = [
   {
@@ -98,8 +59,6 @@ const socialLinks = [
 ];
 
 const Home = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [githubStats, setGithubStats] = useState({
     repos: 0,
     followers: 0,
@@ -171,27 +130,27 @@ const Home = () => {
       icon: <CodeIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />,
       title: "Smart Contract Development",
       description:
-        "Expert in developing secure and efficient smart contracts using Solidity, with a focus on gas optimization and security best practices.",
+        "Expert in developing secure and efficient smart contracts using Solidity — ERC-20/721/1155, upgradeable contracts, staking, vesting, rewards, gas optimisation, and security patterns.",
       details:
-        "I have developed smart contracts for DeFi, NFT Marketplace, Cross-Chain Swaps, Airdrops, Tokens (ERC20, ERC721, ERC1155), Staking etc. ensuring robust security and optimal performance.",
+        "I have developed smart contracts for DeFi, NFT Marketplace, Cross-Chain Swaps, Airdrops, Tokens (ERC20, ERC721, ERC1155), Staking, Vesting, Rewards, and Access Control — ensuring robust security and optimal performance across Ethereum, Shibarium, Polygon, BSC, TRON, Klaytn, Waves, and Stellar.",
     },
     {
       icon: (
-        <StorageIcon sx={{ fontSize: 40, color: "secondary.main", mb: 1 }} />
+        <CodeIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
       ),
-      title: "Blockchain Solutions",
+      title: "Indexing & Data Pipelines",
       description:
-        "Be it EVM/Non-EVM Chains, Be it DeFi/NFT/Cross-Chain/Airdrops/Staking/PoS Tokens, I have provided solutions for all of them.",
+        "Architecting deterministic indexing with Subsquid and The Graph — syncing millions of L2 blocks, handling finality, reorgs, and building custom ETL pipelines for on-chain/off-chain data sync.",
       details:
-        "Most of my projects involved working from the scratch, right from architecture to implementation to testing and deployment. I have worked on multiple EVM blockchains.",
+        "At Shiba Inu, I own end-to-end data pipelines: smart contracts to Subsquid indexers to Node.js/GraphQL APIs powering Shibarium ecosystem tools. I have solved deep protocol issues including event ordering, reward-logic modelling, cross-contract dependency mapping, and long-range indexing drift.",
     },
     {
       icon: <CodeIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />,
       title: "Backend Development",
       description:
-        "Building backend services for blockchain applications, with a focus on performance and security.",
+        "Building high-performance backend services with Node.js, Express.js, TypeScript, GraphQL, and REST APIs — powering blockchain applications with reliable, developer-friendly interfaces.",
       details:
-        "I have experience building backend services for blockchain applications, including APIs, databases, graphql schemas and microservices.",
+        "I deliver backend APIs exposing complex blockchain state as fast, reliable interfaces. Experience with PostgreSQL, MongoDB, MySQL, Go, Geth, Docker, AWS, and CI/CD pipelines.",
     },
   ];
 
@@ -274,10 +233,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Balaji Pachai - Blockchain Developer</title>
+        <title>Balaji Pachai - Senior Blockchain / Solidity Engineer</title>
         <meta
           name="description"
-          content="Balaji Pachai is a blockchain developer and smart contract expert specializing in Ethereum, Solidity, and decentralized applications."
+          content="Senior Blockchain Engineer with 10+ years in software and 7+ years specialising in EVM and multi-chain systems. Smart contracts, indexing, and backend APIs."
         />
       </Helmet>
 
@@ -314,7 +273,7 @@ const Home = () => {
                   mb: 2,
                 }}
               >
-                Blockchain Engineer
+                Senior Blockchain / Solidity Engineer
               </Typography>
               <Typography
                 variant="subtitle1"
@@ -333,8 +292,9 @@ const Home = () => {
                 paragraph
                 sx={{ mb: 4, lineHeight: 1.6 }}
               >
-                Building secure, gas-efficient and optimized decentralized
-                applications.
+                Building secure, gas-efficient smart contracts, deterministic
+                indexing pipelines, and high-performance backend APIs for EVM
+                and multi-chain systems.
               </Typography>
               <Box sx={{ display: "flex", gap: 2, mb: 4 }}>
                 <Button
