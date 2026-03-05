@@ -13,8 +13,6 @@ import {
   Collapse,
   IconButton,
   Paper,
-  useTheme,
-  useMediaQuery,
   Modal,
   Fade,
 } from "@mui/material";
@@ -112,11 +110,39 @@ const projects = [
     },
     icon: <SecurityIcon />,
   },
+  {
+    title: "Shibarium Indexing & Data Pipelines",
+    description:
+      "Subsquid indexers for staking, rewards, token transfers, validator ops, and custom Shibarium L2 logic. Deterministic event modelling syncing millions of L2 blocks, handling finality, reorgs, and RPC inconsistencies.",
+    technologies: ["Subsquid", "TypeScript", "GraphQL", "Node.js"],
+    links: {
+      github: "https://github.com/shibaone/nft-indexer-squid",
+    },
+    icon: <StorageIcon />,
+  },
+  {
+    title: "V2Soft 25th Anniversary NFT",
+    description:
+      "End-to-end NFT issuance system designed, developed, and deployed for V2Soft's 25th anniversary — Solidity contracts, Node.js APIs, MySQL, and AWS infrastructure.",
+    technologies: ["Solidity", "Node.js", "MySQL", "AWS", "Ethers.js"],
+    links: {
+      github: "/projects",
+    },
+    icon: <SecurityIcon />,
+  },
+  {
+    title: "Vehicle NFT",
+    description:
+      "On-chain vehicle lifecycle tracking platform storing vehicle data via ERC-721 with IPFS metadata storage.",
+    technologies: ["Solidity", "ERC-721", "IPFS", "Node.js"],
+    links: {
+      github: "/projects",
+    },
+    icon: <SecurityIcon />,
+  },
 ];
 
 const Projects = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [expanded, setExpanded] = useState(false);
   const handleExpandClick = () => setExpanded((prev) => !prev);
   const [focusedProject, setFocusedProject] = useState<number | null>(null);
@@ -448,7 +474,7 @@ const Projects = () => {
                         component="h2"
                         sx={{ ml: 1, fontWeight: 600 }}
                       >
-                        OpenTherapoid
+                        OpenTherapeutics (DeSci)
                       </Typography>
                     </Box>
                     <Typography
@@ -456,8 +482,8 @@ const Projects = () => {
                       color="text.secondary"
                       sx={{ lineHeight: 1.7 }}
                     >
-                      A comprehensive blockchain solution for healthcare data
-                      management and tokenization, featuring cross-chain
+                      Decentralised science platform for researcher funding,
+                      rewards, and collaboration, featuring cross-chain
                       functionality and advanced security measures.
                     </Typography>
                     <Box sx={{ mb: 3 }}>
