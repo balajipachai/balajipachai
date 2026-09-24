@@ -11,8 +11,6 @@ import {
   Snackbar,
   Alert,
   IconButton,
-  useTheme,
-  useMediaQuery,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -29,8 +27,6 @@ interface FormData {
 }
 
 const Contact = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
