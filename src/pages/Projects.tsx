@@ -28,6 +28,16 @@ const MotionBox = motion(Box);
 
 const projects = [
   {
+    title: "tokenize-it (ETHGlobal Online 2026)",
+    description:
+      "Tokenized employee stock options (ESOPs) on Hedera via the Asset Tokenization Studio — issuance, vesting, leaver clawback, borrowing against vested options, and stablecoin payroll disbursement. 165 tests across contracts and lifecycle flows.",
+    technologies: ["Solidity", "Hedera", "Next.js", "Privy"],
+    links: {
+      github: "https://github.com/balajipachai/tokenize-it",
+    },
+    icon: <SecurityIcon />,
+  },
+  {
     title: "Shib Newsletter Cover V2",
     description:
       "Smart Contracts for managing newsletter cover NFTs with batch minting capabilities. Developed, implemented & deployed the contracts.",
@@ -113,7 +123,7 @@ const projects = [
   {
     title: "Shibarium Indexing & Data Pipelines",
     description:
-      "Subsquid indexers for staking, rewards, token transfers, validator ops, and custom Shibarium L2 logic. Deterministic event modelling syncing millions of L2 blocks, handling finality, reorgs, and RPC inconsistencies.",
+      "Subsquid indexers for staking, rewards, token transfers, validator ops, and custom Shibarium L2 logic. Deterministic event modelling across 100K+ L2 blocks, handling finality, reorgs, and RPC inconsistencies.",
     technologies: ["Subsquid", "TypeScript", "GraphQL", "Node.js"],
     links: {
       github: "https://github.com/shibaone/nft-indexer-squid",

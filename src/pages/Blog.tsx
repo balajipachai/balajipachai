@@ -226,7 +226,7 @@ const Blog = () => {
             href={
               activeTab === 0
                 ? "https://medium.com/@balajishettypachai"
-                : "https://www.linkedin.com/in/balaji-shetty-pachai/"
+                : "https://www.linkedin.com/in/balajipachai/"
             }
             target="_blank"
             rel="noopener noreferrer"

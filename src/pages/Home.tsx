@@ -38,7 +38,7 @@ const socialLinks = [
   },
   {
     icon: <LinkedInIcon />,
-    url: "https://linkedin.com/in/balaji-shetty-pachai",
+    url: "https://www.linkedin.com/in/balajipachai/",
     label: "LinkedIn",
   },
   {
@@ -48,7 +48,7 @@ const socialLinks = [
   },
   {
     icon: <YouTubeIcon />,
-    url: "https://www.youtube.com/@thebasics.academy",
+    url: "https://www.youtube.com/@thebasicsdotacademy",
     label: "YouTube",
   },
   {
@@ -140,9 +140,9 @@ const Home = () => {
       ),
       title: "Indexing & Data Pipelines",
       description:
-        "Architecting deterministic indexing with Subsquid and The Graph — syncing millions of L2 blocks, handling finality, reorgs, and building custom ETL pipelines for on-chain/off-chain data sync.",
+        "Architecting deterministic indexing with Subsquid and The Graph — syncing 100K+ L2 blocks, handling finality, reorgs, and building custom ETL pipelines for on-chain/off-chain data sync.",
       details:
-        "At Shiba Inu, I own end-to-end data pipelines: smart contracts to Subsquid indexers to Node.js/GraphQL APIs powering Shibarium ecosystem tools. I have solved deep protocol issues including event ordering, reward-logic modelling, cross-contract dependency mapping, and long-range indexing drift.",
+        "At Shiba Inu (Apr 2024 – Jun 2026), I owned end-to-end data pipelines: smart contracts to Subsquid indexers to Node.js/GraphQL APIs powering Shibarium ecosystem tools. I solved deep protocol issues including event ordering, reward-logic modelling, cross-contract dependency mapping, and long-range indexing drift.",
     },
     {
       icon: <CodeIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />,
@@ -342,7 +342,7 @@ const Home = () => {
                   <GitHubIcon />
                 </IconButton>
                 <IconButton
-                  href="https://linkedin.com/in/balaji-shetty-pachai"
+                  href="https://www.linkedin.com/in/balajipachai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary"
@@ -370,7 +370,7 @@ const Home = () => {
                   <MediumIcon />
                 </IconButton>
                 <IconButton
-                  href="https://www.youtube.com/@thebasics.academy"
+                  href="https://www.youtube.com/@thebasicsdotacademy"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary"

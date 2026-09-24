@@ -50,6 +50,9 @@ const skills = [
   { name: "Chainlink CCIP", icon: <SecurityIcon /> },
   { name: "Infura", icon: <SecurityIcon /> },
   { name: "Alchemy", icon: <SecurityIcon /> },
+  { name: "Solana", icon: <SecurityIcon /> },
+  { name: "Hedera", icon: <SecurityIcon /> },
+  { name: "AI-assisted dev (Claude, GPT)", icon: <CodeIcon /> },
 ];
 
 const About = () => {
@@ -124,8 +127,9 @@ const About = () => {
                   10+ years in software, 7+ years specialising in EVM and
                   multi-chain systems. I own the full Web3 lifecycle — smart
                   contracts, deterministic indexing, and high-performance backend
-                  APIs. Passionate about development, teaching, and public
-                  speaking.
+                  APIs. Visiting faculty for blockchain, smart contract
+                  security, and Introduction to Solana, and founder of
+                  thebasicsdotacademy.
                 </Typography>
               </Paper>
             </Grid>
@@ -167,13 +171,16 @@ const About = () => {
                   With a deep understanding of EVM chains, Solidity, and
                   blockchain architecture, I own the full Web3 lifecycle — smart
                   contracts, deterministic indexing (Subsquid/The Graph), and
-                  high-performance backend APIs. Currently building
-                  production-grade L2 infrastructure at Shiba Inu (Shibarium).
+                  high-performance backend APIs. Most recently built
+                  production-grade L2 infrastructure at Shiba Inu (Shibarium),
+                  Apr 2024 – Jun 2026.
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                  I'm constantly learning and adapting to new technologies in
-                  the blockchain space, ensuring that I can provide the best
-                  solutions for any project I work on.
+                  I also teach blockchain, smart contract security, and
+                  Introduction to Solana at DES
+                  Pune University and ACTS, C-DAC Patna, and use AI tools
+                  like Claude and GPT to ship faster — with every change
+                  human-reviewed and tested before it lands.
                 </Typography>
 
                 <Divider sx={{ my: 4 }} />
@@ -239,6 +246,81 @@ const About = () => {
                 </Typography>
 
                 <Grid container spacing={4}>
+                  {/* Teaching & Education */}
+                  <Grid item xs={12}>
+                    <Card
+                      sx={{
+                        height: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        position: "relative",
+                        overflow: "visible",
+                        transition: "transform 0.2s, box-shadow 0.2s",
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                          boxShadow: 6,
+                        },
+                      }}
+                    >
+                      <CardContent sx={{ flexGrow: 1, pt: 4 }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            mb: 2,
+                            color: "primary.main",
+                          }}
+                        >
+                          <CodeIcon />
+                          <Typography
+                            variant="h5"
+                            component="h2"
+                            sx={{ ml: 1, fontWeight: 600 }}
+                          >
+                            Mentor, Project Guide & Visiting Faculty
+                          </Typography>
+                        </Box>
+                        <Typography
+                          variant="subtitle1"
+                          color="primary"
+                          sx={{ mb: 2, fontWeight: 500 }}
+                        >
+                          Blockchain, Smart Contract Security &amp; Auditing, Introduction to Solana
+                        </Typography>
+                        <Box sx={{ pl: 2 }}>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • DES Pune University — B.Sc. (Blockchain Technology): Smart Contract Security: Fundamentals &amp; Auditing, and Introduction to Solana
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • ACTS, C-DAC Patna — Instructor, PGCP-FBD (FinTech &amp; Blockchain Development): curriculum, lab exams, capstones, mock interviews
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • Savitribai Phule Pune University (Dept. of Scientific Computing, Modelling &amp; Simulation) and Nowrosjee Wadia College (Dept. of Computer Science)
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • Founder of thebasicsdotacademy — YouTube channel teaching Solidity, Solana, smart contract security, and LeetCode 75
+                          </Typography>
+                        </Box>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+
                   {/* Shiba Inu Experience */}
                   <Grid item xs={12} md={6}>
                     <Card
@@ -278,7 +360,7 @@ const About = () => {
                           color="primary"
                           sx={{ mb: 2, fontWeight: 500 }}
                         >
-                          Shiba Inu | Apr 2024 – Present
+                          Shiba Inu | Apr 2024 – Jun 2026
                         </Typography>
                         <Box sx={{ pl: 2 }}>
                           <Typography
@@ -295,16 +377,18 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Architected Subsquid indexers syncing millions of
-                            L2 blocks with deterministic event modelling
+                            • Built Subsquid/PostgreSQL indexing services
+                            syncing 100K+ L2 blocks with deterministic event
+                            modelling
                           </Typography>
                           <Typography
                             variant="body1"
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Led smart contract development for ShifuAirdrop
-                            and cross-chain token standards using Chainlink CCIP
+                            • Architected the SHIFU token distribution —
+                            20,000+ claims for 10,000+ wallets across two rounds
+                            via a merkle-proof service
                           </Typography>
                           <Typography
                             variant="body1"
@@ -319,8 +403,8 @@ const About = () => {
                             paragraph
                             sx={{ lineHeight: 1.8 }}
                           >
-                            • Developed cross-chain swap contracts using CCIP
-                            and Li.Fi for Crosschain Shibaswap
+                            • Cross-chain swap &amp; bridging on Chainlink CCIP —
+                            production between Ethereum and Shibarium
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                             • Developed, implemented & deployed Shib Newsletter
@@ -400,6 +484,14 @@ const About = () => {
                             lifecycle data on-chain via ERC-721 with IPFS
                             metadata
                           </Typography>
+                          <Typography
+                            variant="body1"
+                            paragraph
+                            sx={{ lineHeight: 1.8 }}
+                          >
+                            • Delivered the EarnTV Reward Engine and
+                            OpenTherapeutics (DeSci) smart contracts
+                          </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                             • Developed PoCs and actively contributed to the
                             Blockchain Innovation Team; trained newcomers on
@@ -460,24 +552,6 @@ const About = () => {
                             • Designed & deployed production smart contracts for
                             staking, rewards, vesting, ERC20/721, and full token
                             ecosystems
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            paragraph
-                            sx={{ lineHeight: 1.8 }}
-                          >
-                            • Built the EarnTV Reward Engine — ERC-20 issuance,
-                            staking, NFTs, and Gnosis MultiSig wallet
-                            integration
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            paragraph
-                            sx={{ lineHeight: 1.8 }}
-                          >
-                            • Developed smart contracts for OpenTherapeutics
-                            (Decentralised Science) — researcher rewards,
-                            funding, and collaboration
                           </Typography>
                           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                             • Led backend & blockchain development at Humation
@@ -576,7 +650,7 @@ const About = () => {
                     </Card>
                   </Grid>
 
-                  {/* Freelance Experience */}
+                  {/* AtoS Experience */}
                   <Grid item xs={12}>
                     <Card
                       sx={{
@@ -786,7 +860,7 @@ const About = () => {
                         • Consensys Blockchain Developer Bootcamp — Scholar Recipient
                       </Typography>
                       <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
-                        • IAAA Certified Ethereum Blockchain Developer and Professional
+                        • IAAA Certified Ethereum Blockchain Developer
                       </Typography>
                       <Typography variant="body1" paragraph sx={{ lineHeight: 1.8 }}>
                         • Arc Certified Remote Developer — Arc

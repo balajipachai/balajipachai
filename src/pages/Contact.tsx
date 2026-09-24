@@ -274,7 +274,7 @@ const Contact = () => {
                       <GitHubIcon />
                     </IconButton>
                     <IconButton
-                      href="https://linkedin.com/in/balaji-shetty-pachai"
+                      href="https://www.linkedin.com/in/balajipachai/"
                       target="_blank"
                       rel="noopener noreferrer"
                       color="primary"
